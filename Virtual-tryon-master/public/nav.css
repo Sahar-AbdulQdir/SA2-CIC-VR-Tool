@@ -1,0 +1,440 @@
+main{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+/* Base styles */
+header {
+    margin: 0;
+           border-bottom: #000000 4px solid;
+}
+
+header .navBar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Banner */
+header .navBar .banner {
+    background-color: #EE1C25;
+    text-align: center;
+}
+
+header .navBar .banner h3 {
+    font-size: 1.2em;
+    color: aliceblue;
+    font-weight: 100;
+    margin: 10px 0;
+}
+
+/* Navigation container */
+header .navBar .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+/* Logo & title */
+header .navBar .nav .part1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+}
+
+header .navBar .nav .part1 li img {
+    width: 60px;
+    height: 60px;
+}
+
+header .navBar .nav .part1 li h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Center navigation */
+header .navBar .nav .part2 {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+header .navBar .nav .part2 li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 1.1em;
+}
+
+/* Right side (buttons/icons) */
+header .navBar .nav .part3 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+
+header .navBar .nav .part3 .navButton {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    height: 35px;
+    width: 110px;
+}
+
+header .navBar .nav .part3 .navButton a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    header .navBar .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header .navBar .nav .part2 {
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    header .navBar .nav .part3 {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    header .navBar .banner h3 {
+        font-size: 1em;
+    }
+
+    header .navBar .nav .part1 li h3 {
+        font-size: 1.2em;
+    }
+
+    header .navBar .nav .part2 li a {
+        font-size: 1em;
+    }
+
+    header .navBar .nav .part3 i {
+        font-size: 20px !important;
+    }
+}
+
+.container {
+  background: #ffffff00;
+  padding: 40px;
+  border-radius: 20px;
+  animation: fadeIn 1.5s ease;
+  margin: 10px auto;
+  max-width: 600px;
+  width: 100%;
+  text-align: left !important;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  animation: slideUp 1s ease;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+  flex-wrap: wrap;
+}
+
+.step-icon {
+  background: #EE1C25;
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 10px;
+  flex-shrink: 0;
+  font-size: 1em;
+}
+
+.step-text {
+  font-size: 1em;
+  color: #555;
+  flex: 1;
+  min-width: 0;
+}
+
+.tools {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #eee;
+  animation: fadeIn 2s ease;
+}
+
+.tools h2 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.tools p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.4;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .step {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .step-icon {
+    margin-bottom: 5px;
+  }
+
+  .tools h2 {
+    font-size: 1em;
+  }
+
+  .tools p {
+    font-size: 0.95em;
+  }
+}
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .arrowsWrapper ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  
+  .arrowsWrapper .icon {
+  position: relative;
+  background: #ee1c27;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .arrowsWrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .arrowsWrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 15px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .arrowsWrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .arrowsWrapper .icon:hover span,
+  .arrowsWrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .arrowsWrapper svg {
+    fill: rgb(255, 255, 255);
+    width: 35px;
+    margin-left: -21px;
+    margin-bottom: -10px !important;
+  }
+  
+  .arrowsWrapper span:hover,
+  .arrowsWrapper svg:hover,
+  .arrowsWrapper .black:hover,
+  .arrowsWrapper .black:hover .tooltip,
+  .arrowsWrapper .black:hover .tooltip::before {
+    background: #222;
+    color: white;
+    fill: white;
+  }
+
+ 
+  
+    .footer {
+        background-color: rgb(0, 0, 0);
+        border-top: 20px solid #000000;
+        padding: 30px 40px;
+        margin-top: 120px;
+        color: rgb(255, 255, 255);
+            margin-bottom: -200px;
+      }
+      
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        .Menmail{
+          color: #ffffff;
+        }
+              .footer-icons{
+        .fa {
+           color: #ffffff;
+           font-size: 1.6rem;
+        }
+       
+
+      }
+      }
+      
+      .footer-logo {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      
+      .footer-logo img {
+        width: 120px;
+        margin-top: 20px;
+        height: auto;
+      }
+      
+      .footer-logo h2 {
+        font-size: 34px;
+        line-height: 1.2;
+        margin-top: -10px;
+      }
+      
+      .footer-logo h2 span {
+        font-weight: bold;
+      }
+      
+      .footer-nav,
+      .footer-contact {
+        flex: 1;
+        margin-top: 10px;
+      }
+      
+      .footer-nav h3,
+      .footer-contact h3 {
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      
+      .footer-nav ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .footer-nav li {
+        margin: 5px 0;
+      }
+      
+      .footer-nav a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+      }
+      
+      .footer-contact p {
+        margin: 6px 0;
+        font-size: 14px;
+      }
+      
+      .footer-bottom {
+        text-align: center;
+        font-size: 13px;
+        margin-top: 30px;
+        color: white;
+      }
+
+
+

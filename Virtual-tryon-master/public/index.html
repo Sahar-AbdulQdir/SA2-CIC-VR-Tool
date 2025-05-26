@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Virtual try on</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+
+    <link href="./hint.min.css" type="text/css" media="screen" rel="stylesheet" />
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="demo-style.css">
+<style>
+    
+        #frame_live_resizer{
+            top: 10px !important;
+            margin-left: -140px !important;
+            background-color: rgb(255, 255, 255);
+        }
+    
+        #mainPanelArea{
+            margin-left: 70px;
+        }
+
+        #previewImage{
+            width: 300px;
+            height: 390px !important;
+        }
+
+</style>
+    <link rel="icon" href="assets/images/ManarLogo.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="navBar">
+            <div class="banner">
+                <h3>40% off on all Frames and Sunglasses!!</h3>
+            </div>
+
+
+            <div class="nav">
+            <ul class="part1">
+                <li><img src="assets/images/ManarLogo.png" alt="Logo"></li>
+                <li><H3>Al Manar Optics</H3></li>
+            </ul>
+            <ul class="part2">
+                <li><a href="https://almanaroptics.vercel.app/">Home</a></li>
+                <li><a href="https://almanaroptics.vercel.app/#about-section">About</a></li>
+                <li><a href="https://almanaroptics.vercel.app/filter2.html">Store</a></li>
+                <li><a href="index.html">Virtual Try-On</a></li>
+            </ul>
+            <ul class="part3">
+                <li><button class="navButton"><a href="filter2.html">Shop now!</a></button></li>
+                <li><i class="fas fa-cart-plus" style="font-size:20px"></i></li>
+            </ul>            
+            </div>
+        </div>
+    </header>
+    <main>
+    <div class="container" >
+        <h1>How to Use the Virtual Try-On</h1>
+    
+        <div class="step">
+          <div class="step-icon">1</div>
+          <div class="step-text"><strong>Choose:</strong> Select a sample image from the gallery.</div>
+        </div>
+    
+        <div class="step">
+          <div class="step-icon">2</div>
+          <div class="step-text"><strong>Browse:</strong> Upload a photo from your device.</div>
+        </div>
+    
+        <div class="step">
+          <div class="step-icon">3</div>
+          <div class="step-text"><strong>Take:</strong> Capture a new photo using your camera.</div>
+        </div>
+    
+        <div class="step">
+          <div class="step-icon">4</div>
+          <div class="step-text"><strong>Try:</strong> Pick a pair of glasses and see how they look on you!</div>
+        </div>
+    
+        <div class="step">
+          <div class="step-icon">5</div>
+          <div class="step-text"><strong>Download:</strong> Save your try-on image to your device.</div>
+        </div>
+    
+        <div class="tools">
+          <h2>Editing Tools</h2>
+          <p>Use the tools on the right side of the image to <strong>reset</strong>, <strong>rotate</strong>, <strong>zoom</strong>, or <strong>download</strong> your photo easily.</p>
+        </div>
+      </div>
+  <div class="eyetryon">
+    <div style="float:left;" class="tryon-box">
+        <div id="tryonpreview0" class="bitlizer-tryon"></div>
+        <div id="tryonbar0" class="bitlizer-tryon-bar"></div>
+    </div>
+
+    <div class="frames" id="frames" style="margin-left:30px; position: relative; overflow: hidden;">
+        <ul id="framesList" style="display: flex; overflow-x: auto; list-style: none; padding: 0; margin: 0; scroll-behavior: smooth;">
+
+            <li data="glasses/g1.png" frameH="1/5" style="flex: 0 0 auto; margin-right: 10px;">
+    <img src="glasses/a1.jpg" width="180">
+</li>
+<li data="glasses/g2.png" frameH="1/5" style="flex: 0 0 auto; margin-right: 10px;">
+    <img src="glasses/a2.jpg" width="180">
+</li>
+<li data="glasses/g3.png" frameH="1/5" style="flex: 0 0 auto; margin-right: 10px;">
+    <img src="glasses/a3.jpg" width="180">
+</li>
+<li data="glasses/g4.png" frameH="1/5" style="flex: 0 0 auto; margin-right: 10px;">
+    <img src="glasses/a4.jpg" width="180">
+</li>
+<li data="glasses/g5.png" frameH="1/5" style="flex: 0 0 auto; margin-right: 10px;">
+    <img src="glasses/a5.jpg" width="180">
+</li>
+<li data="glasses/g6.png" frameH="1/5" style="flex: 0 0 auto; margin-right: 10px;">
+    <img src="glasses/a6.jpg" width="180">
+</li>
+<li data="glasses/g7.png" frameH="1/5" style="flex: 0 0 auto; margin-right: 10px;">
+    <img src="glasses/a7.jpg" width="180">
+</li>
+<li data="glasses/g8.png" frameH="1/5" style="flex: 0 0 auto; margin-right: 10px;">
+    <img src="glasses/a8.jpg" width="180">
+</li>
+<li data="glasses/g9.png" frameH="1/5" style="flex: 0 0 auto; margin-right: 10px;">
+    <img src="glasses/a9.jpg" width="180">
+</li>
+<li data="glasses/g10.png" frameH="1/5" style="flex: 0 0 auto; margin-right: 10px;">
+    <img src="glasses/a10.jpg" width="180">
+</li>
+<li data="glasses/g11.png" frameH="1/5" style="flex: 0 0 auto; margin-right: 10px;">
+    <img src="glasses/a11.jpg" width="180">
+</li>
+<li data="glasses/g12.png" frameH="1/5" style="flex: 0 0 auto; margin-right: 10px;">
+    <img src="glasses/a12.jpg" width="180">
+</li>
+<li data="glasses/g13.png" frameH="1/5" style="flex: 0 0 auto; margin-right: 10px;">
+    <img src="glasses/a13.jpg" width="180">
+</li>
+<li data="glasses/g14.png" frameH="1/5" style="flex: 0 0 auto; margin-right: 10px;">
+    <img src="glasses/a14.jpg" width="180">
+</li>
+<li data="glasses/g15.png" frameH="1/5" style="flex: 0 0 auto; margin-right: 10px;">
+    <img src="glasses/a15.jpg" width="180">
+</li>
+<li data="glasses/g16.png" frameH="1/5" style="flex: 0 0 auto; margin-right: 10px;">
+    <img src="glasses/a16.jpg" width="180">
+</li>
+
+            <!-- Add more <li> here -->
+        </ul>
+
+        <ul class="arrowsWrapper" style="    display: flex;
+    flex-direction: row;  margin-left: -10px;">
+            <li class="icon black"><button class="scroll-btn left" onclick="scrollFrames(-200)">
+            <span class="tooltip">Left</span>
+            <span><svg viewBox="0 0 16 16" class="bi bi-chevron-double-left" fill="currentColor" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" fill-rule="evenodd"></path>
+      <path d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" fill-rule="evenodd"></path>
+    </svg></span>
+        </button></li>
+             <li class="icon black"><button class="scroll-btn right" onclick="scrollFrames(200)">
+            <span class="tooltip">Right</span>
+            <span><svg viewBox="0 0 16 16" class="bi bi-chevron-double-right" fill="currentColor" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" fill-rule="evenodd"></path>
+      <path d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" fill-rule="evenodd"></path>
+    </svg></span>
+        </button></li></ul>
+    </div>
+</div>
+</main>
+
+    <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="assets/images/ManarLogo.png" alt="Al Manar Optics Logo">
+      <h2><span>AL MANAR</span><br>Optics</h2>
+    </div>
+
+    <div class="footer-nav">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about-section">About Us</a></li>
+        <li><a href="#features-bar">Our Services</a></li>
+
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p><i class="fa fa-map-marker" aria-hidden="true"></i> Al Manar Optics, Ajman, UAE</p>
+      <p><i class="fa fa-phone" aria-hidden="true"></i> 06 741 1030</p>
+      <p>
+        <a class="Menmail" href="mailto:AlManaroptics@gmail.com">
+          <i class="fa fa-envelope" aria-hidden="true"></i> AlManaroptics@gmail.com
+        </a>
+      </p>
+      <div class="footer-icons">
+        <a href="https://wa.me/971567891234" target="_blank" title="WhatsApp">
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </a>
+        <a href="https://instagram.com/almanaroptics" target="_blank" title="Instagram">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:AlManaroptics@gmail.com" title="Email">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 AL Manar Optics. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script type="text/javascript" src="./dist/bundle.js"></script>
+    <script type="text/javascript" src="./settings.js"></script>
+    <script type="text/javascript" src="./libs/tracking-min.js"></script>
+    <script type="text/javascript" src="./libs/eye-min.js"></script>
+    <script type="text/javascript">
+        var tryOnActive = 'tryonpreview0';
+        var last_tryon = null;
+        var defaultTryon = 'tryonpreview0';
+        var defaultBar = 'tryonbar0';
+        settings_tryon.currentFrame = "glasses/oakley.png";
+        settings_tryon.tryonActive = "tryonpreview0";
+
+        function showVto(tryonId, barId) {
+            EventListener.dispatch("MULTI_DESTROY", this);
+            settings_tryon.activeTryOn = tryonId;
+            tryOnActive = tryonId;
+
+            if (last_tryon != null) {
+                last_tryon.destroyAll();
+            }
+
+            // var tryon = new Tryon();
+            // last_tryon = tryon;
+            
+            Tryon.initApp(tryonId, barId);
+
+        }
+        window.addEventListener("DOMContentLoaded", (event) => {
+                console.log("DOM fully loaded and parsed");
+                showVto(defaultTryon, defaultBar);
+        });
+            
+        function showalert(event, elem) {
+            return false;
+        }
+
+        var elem = document.getElementsByTagName("li");
+        for (var i = 0; i < elem.length; i++) {
+            elem[i].addEventListener("click", applyFrame);
+        }
+        function applyFrame(evt) {
+            var imageName = evt.currentTarget.getAttribute("data");
+            var framePos = evt.currentTarget.getAttribute("frameH");
+            EventListener.dispatch("APPLY_FRAME", this, imageName, tryOnActive, framePos);
+        }
+    </script>
+</body>
+
+</html>
